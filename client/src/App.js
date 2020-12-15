@@ -1,7 +1,8 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-// modificaciones del curso docker
+
 import{ BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import OtherPage from './OtherPage';
 import Fib from './Fib';
@@ -26,7 +27,7 @@ function App() {
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
         </header>
-        // adicional en el curso
+
         <div>
           <Router exact path="/" component={Fib} />
           <Router exact path="/otherpage" component={OtherPage} />
